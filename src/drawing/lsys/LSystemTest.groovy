@@ -1,10 +1,7 @@
 package drawing.lsys
 
-import static org.junit.jupiter.api.Assertions.*
-
 import org.junit.jupiter.api.Test
 import static org.junit.jupiter.api.Assertions.*
-import gpdraw.*;
 import groovy.json.JsonSlurper
 import java.awt.Color
 
@@ -47,7 +44,7 @@ class LSystemTest {
 			//def ms = System.currentTimeMillis()
 			draw(metric)
 			//println "${System.currentTimeMillis() - ms}"
-			sleep(600)
+			sleep(500)
 		}
 	}
 	
