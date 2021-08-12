@@ -1,0 +1,9 @@
+{
+"vars":"X F",
+"consts":"+ - [ ]",
+"start":"X",
+"rules":"X=F[+''X]F[-''X]+X, F=FF",
+"angle":20.0,
+"length":15,
+"level":4
+}

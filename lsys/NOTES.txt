@@ -1,0 +1,6 @@
+
+_ Operators change ', ", ~, ` to <, >, |, /
+_ Change constant name to operator
+_ How do 'F' and 'M' work, in particular 'F' which is a variable
+_ Change example 'F' to 'Y'?
+_ Use syntax from http://paulbourke.net/fractals/lsys/

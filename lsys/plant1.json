@@ -1,0 +1,33 @@
+[
+	{
+		"type": "config",
+		"comment": "These designs taken from http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"xbase": 400,
+		"ybase": 0,
+		"width": 4,
+		"turn": 90,
+		"color": {
+			"red": 1,
+			"green": 150,
+			"blue": 150
+		},
+		"arrange":"individual"
+	},
+	{
+		"name": "plant1",
+		"id":"1",
+		"type": "lsys",
+		"active": true,
+		"x": 400,
+		"y": 550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X, F=FF",
+			"angle": 25.0,
+			"length": 15,
+			"level": 4
+		}
+	}
+]

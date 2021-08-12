@@ -1,0 +1,33 @@
+<head>
+<style type="text/css">
+.style1 {
+text-align: center;
+}
+h1 { text-align: right; }
+h2 { text-align: right; }
+h3 { text-align: right; }
+</style>
+</head>
+<body style="color: #000000; background-color: #80B69C">
+<div class="style1">
+<IMG src="lsys.jpg" border="1" name="refresh" width="800" height="800">
+<SCRIPT language="JavaScript" type="text/javascript">
+var t = 0.3 // Interval in Seconds
+image = "lsys.jpg" //URL of the Image
+function Start() {
+tmp = new Date();
+tmp = "?"+tmp.getTime()
+document.images["refresh"].src = image+tmp
+setTimeout("Start()", t*1000)
+}
+Start();
+</SCRIPT> </div>
+<hr>
+<h1>Financial Winds</h1>
+<h2>Wiki Fractal Plant</h2>
+<h2>Lindenmayer System</h2>
+<h2>Initial Prototype</h2>
+<h2>Stochastic Mode</h2>
+<h3><a href="http://rickspates.art">RickSpates.art</a> &copy; 2021</h3>
+</body>
+</html>

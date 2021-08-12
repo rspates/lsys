@@ -1,0 +1,118 @@
+[
+	{
+		"type": "config",
+		"comment": "These designs taken from http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"xbase": 0,
+		"ybase": 20,
+		"width": 4,
+		"turn": 90,
+		"color": {
+			"red": 1,
+			"green": 150,
+			"blue": 150
+		},
+		"arrange":"individual"
+	},
+	{
+		"name": "plant1",
+		"id":"1",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X, F=FF",
+			"angle": 25.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "plant2",
+		"id":"2",
+		"type": "lsys",
+		"active": false,
+		"x": -100,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F[+''X]F[-''X]+X, F=FF",
+			"angle": 20.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "stochPlant1",
+		"id":"3",
+		"type": "lsys",
+		"active": false,
+		"x": 0,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=F[+`F]F[-`F]F, F=F[+`F]F, F=F[-`F]F",
+			"angle": 30.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "stochPlant2",
+		"id":"4",
+		"active": false,
+		"type": "lsys",
+		"x": 100,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+''X]+F[+FX]-X, F=FF, X=F[+X]F[-''X]+X",
+			"angle": 25.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "stochPlant3",
+		"id":"5",
+		"type": "lsys",
+		"active": false,
+		"x": 200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X, F=FF, X=F[+X]F[-X]+X",
+			"angle": -20.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "wiki fractal plant",
+		"id":"6",
+		"active": true,
+		"type": "lsys",
+		"x": 250,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X= F+[[X]-''X]-F[-FX]+''X,F=FF",
+			"angle": -20.0,
+			"length": 7,
+			"level": 6
+		}
+	}
+]

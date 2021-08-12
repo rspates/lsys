@@ -1,0 +1,9 @@
+{
+"vars":"F",
+"consts":"+ - [ ]",
+"start":"F",
+"rules":"F=F[+`F]F[-`F]F, F=F[+`F]F, F=F[-`F]F",
+"angle":30.0,
+"length":15,
+"level":4
+}

@@ -1,0 +1,312 @@
+[
+	{
+		"type": "config",
+		"xbase": 0,
+		"ybase": -200,
+		"width": 4,
+		"turn": 90,
+		"color": {
+			"red": 1,
+			"green": 150,
+			"blue": 150
+		},
+		"arrange":"random"
+	},
+	{
+		"name": "https://www.kevs3d.co.uk/dev/lsystems/",
+		"comment":"X=C0F-[C2[X]+C3X]+C1F[C3+FX]-X,F=FF ## make use of color selector Cn",
+		"id":"1",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X,F=FF",
+			"angle": 25.0,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "https://www.kevs3d.co.uk/dev/lsystems/",
+		"id":"2",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "F=FF-[-F+F]+[+F-F], X=FF+[+F]+[-F]",
+			"angle": 25.0,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "https://www.kevs3d.co.uk/dev/lsystems/",
+		"id":"3",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=FF-[-F+F+F]+[+F-F-F]",
+			"angle": 22.0,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "https://www.kevs3d.co.uk/dev/lsystems/",
+		"id":"4",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=FF[-F++F][+F--F]++F--F",
+			"angle": 27.0,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "https://www.kevs3d.co.uk/dev/lsystems/",
+		"id":"5",
+		"comment":"F=F [- & < F][ < + + & F ] | | F [ - - & > F ][+ & F ] ## extra &<| operators",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=F [- F][ + + F ] F [ - - F ][+ F ]",
+			"angle": 22.5,
+			"length": 15,
+			"level": 3
+		}
+	},
+	{
+		"name": "https://www.csh.rit.edu/~aidan/portfolio/3DLSystems.shtml",
+		"id":"6",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=F[+F]F[-F]F",
+			"angle": 25.7,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "https://www.csh.rit.edu/~aidan/portfolio/3DLSystems.shtml",
+		"id":"7",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=F[+F]F[-F][F]",
+			"angle": 20.0,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "https://www.csh.rit.edu/~aidan/portfolio/3DLSystems.shtml",
+		"id":"8",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=FF-[-F+F+F+F]+[+F-F-F]",
+			"angle": 22.5,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "https://www.csh.rit.edu/~aidan/portfolio/3DLSystems.shtml",
+		"id":"9",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F[+X]F[-X]+X,F=FF",
+			"angle": 20.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "https://www.csh.rit.edu/~aidan/portfolio/3DLSystems.shtml",
+		"id":"10",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F[+X][-X]FX,F=FF",
+			"angle": 25.7,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "https://www.csh.rit.edu/~aidan/portfolio/3DLSystems.shtml",
+		"id":"11",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X,F=FF",
+			"angle": 22.5,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"comment":"fuzzy weed",
+		"id":"12",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X,F=FF",
+			"angle": 22.5,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"id":"13",
+		"comment":"twiggy weed",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F[-X]F[-X]+X,F=FF",
+			"angle": 25.0,
+			"length": 15,
+			"level": 5
+		}
+	},
+	{
+		"name": "http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"id":"14",
+		"comment":"tall seaweed",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=F[+F]F[-F]F",
+			"angle": 25.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"id":"15",
+		"comment":"wavy seaweed",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "F",
+			"consts": "+ - [ ]",
+			"start": "F",
+			"rules": "F=FF-[-F+F+F]+[+F-F-F]",
+			"angle": 25.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "http://piratefsh.github.io/p5js-art/public/lsystems/",
+		"id":"16",
+		"comment":"stochastic fuzzy weed {error in orig:X=F-[[X]+X]+F[+FX]-X,F+[[X]-X]-F[-FX]+X,F=FF}",
+		"type": "lsys",
+		"active": false,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-XF+[[X]-X]-F[-FX]+X,F=FF",
+			"angle": 25.0,
+			"length": 15,
+			"level": 4
+		}
+	},
+	{
+		"name": "https://hurna.io/academy/algorithms/explorers/fractal_generator/lindenmayer_system.html",
+		"id":"17",
+		"comment":"stochastic fuzzy weed",
+		"type": "lsys",
+		"active": true,
+		"x": -200,
+		"y": -550,
+		"graph": {
+			"vars": "X F",
+			"consts": "+ - [ ]",
+			"start": "X",
+			"rules": "X=F-[[X]+X]+F[+FX]-X,F=FF",
+			"angle": 25.0,
+			"length": 15,
+			"level": 5
+		}
+	}
+]
