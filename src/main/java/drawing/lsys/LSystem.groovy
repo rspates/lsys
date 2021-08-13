@@ -33,7 +33,7 @@ public class LSystem{
     String start;
     int level;
     boolean varsDraw = true; //Test if variables draw by default
-	double gmean=0.168
+
 	IGraphics pen
 	double scale=1;
 	LSystem(){
@@ -136,14 +136,10 @@ public class LSystem{
             //Pen
             case '*':
             changePenColor(); break;
-            case '"':
-            pen.setWidth(Math.min(100, (pen.getWidth()+pen.getWidth()*gmean) as int)); break;
-            case '\'':
-            pen.setWidth(Math.max(1, (pen.getWidth()-pen.getWidth()*gmean) as int)); break;
-//			case '"':
-//			pen.setWidth(Math.min(100, pen.getWidth()+1)); break;
-//			case '\'':
-//			pen.setWidth(Math.max(1, pen.getWidth()-1)); break;
+			case '"':
+			pen.setWidth(Math.min(100, pen.getWidth()+1)); break;
+			case '\'':
+			pen.setWidth(Math.max(1, pen.getWidth()-1)); break;
 
             //Length
             case '~':
