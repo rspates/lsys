@@ -135,7 +135,7 @@ class Graphics implements IGraphics {
 
 	@Override
 	public void setWidth(int width) {
-		width = width
+		size = width
 
 	}
 
