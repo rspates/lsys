@@ -1,9 +1,0 @@
-{
-"vars":"X F",
-"consts":"+ - [ ]",
-"start":"X",
-"rules":"X=F-[[X]+X]+F[+FX]-X, F=FF, X=F[+X]F[-X]+X",
-"angle":25.0,
-"length":15,
-"level":4
-}
