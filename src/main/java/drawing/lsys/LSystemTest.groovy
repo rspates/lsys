@@ -4,13 +4,17 @@ import org.junit.jupiter.api.Test
 import static org.junit.jupiter.api.Assertions.*
 import groovy.json.JsonSlurper
 import java.awt.Color
-
+import org.apache.commons.io.FileUtils
 class LSystemTest {
 
+	/**
+	 * Produces a lindenmayer-system tree
+	 * as a jpeg file
+	 */
 	@Test
 	void test() {
 
-		LSystem sys = new LSystem(2000,2000);
+		LSystem sys = new LSystem(2000,2000,0.2);
 
 		def c = new JsonSlurper().parse(new File("lsys/allPlants.json"))
 
@@ -36,6 +40,15 @@ class LSystemTest {
 		sys.save("lsys.jpg")
 	}
 
+	/**
+	 * Open images.html in the project root dir.
+	 * Run this test to produce a series of 
+	 * lindenmayer-system tree jpeg images.
+	 * Each one differs by a random amount from
+	 * the previous image.
+	 * The html updates periodically animating
+	 * the tree movement.
+	 */
 	@Test
 	void testLoop() {
 		def metric = 1.0
@@ -43,8 +56,12 @@ class LSystemTest {
 		for (int i=0;true;i++) {
 			//def ms = System.currentTimeMillis()
 			draw(metric)
+			FileUtils.copyFile(
+				new File("./lsys0.jpg"),
+				new File("./lsys.jpg")
+				)
 			//println "${System.currentTimeMillis() - ms}"
-			sleep(500)
+			sleep(200)
 		}
 	}
 	
@@ -73,7 +90,7 @@ class LSystemTest {
 
 				sys.draw(m.x+xoff, m.y+yoff, turn, width, new Color(red,green,blue));
 		}
-		sys.save("lsys.jpg")
+		sys.save("lsys0.jpg")
 	}
 
 	@Test
